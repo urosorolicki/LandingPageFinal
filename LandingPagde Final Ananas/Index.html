@@ -1,0 +1,313 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ananas</title>
+    <link rel="icon" type="image/x-icon" href="Favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="Favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <?xml version="1.0" encoding="utf-8"?>
+<browserconfig><msapplication><tile><square70x70logo src="Favicon/ms-icon-70x70.png"/><square150x150logo src="/ms-icon-150x150.png"/><square310x310logo src="/ms-icon-310x310.png"/><TileColor>
+
+</tile></msapplication></browserconfig>
+
+</head>
+
+<style>
+    body,
+    html {
+        margin: 0px;
+        padding: 40px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .Container {
+        width: 20%;
+        min-width: 500px;
+        float: right;
+        border-radius: 25px;
+        border: 0px solid #ffffff;
+    }
+    
+    @media all and (max-width: 500px) {
+        header {
+            height: 70px;
+            line-height: 70px;
+        }
+        header span {
+            font-size: 16px;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Times New Roman", Times, serif;
+            color: #84BD00;
+            background-color: #ffffff;
+            background-repeat: no-repeat;
+            background-size: 20px;
+        }
+        #fh2 {
+            padding: 10px 15px;
+            color: #84BD00;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        @media (max-width: 400px) {
+            #fh2 {
+                font-size: 20px;
+            }
+        }
+        #fh4 {
+            padding: 2px 15px;
+            color: #FE5000;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .dropdown-check-list {
+            display: inline-block;
+        }
+        .dropdown-check-list .anchor {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            padding: 5px 50px 5px 10px;
+            border: 1px solid #ccc;
+        }
+        .dropdown-check-list .anchor:after {
+            position: absolute;
+            content: "";
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            padding: 5px;
+            right: 10px;
+            top: 20%;
+            -moz-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            -o-transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+        }
+        .dropdown-check-list .anchor:active:after {
+            right: 8px;
+            top: 21%;
+        }
+        .dropdown-check-list ul.items {
+            padding: 2px;
+            display: none;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        .dropdown-check-list ul.items li {
+            list-style: none;
+        }
+        .dropdown-check-list.visible .anchor {
+            color: #0094ff;
+        }
+        .dropdown-check-list.visible .items {
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <div class="Container">
+        <form action="/action_page.php">
+            <div class="container">
+                <h2 style="color: #2D2926;" id="fh2">Hvala ti na obavljenoj kupovini i izdvojenom vremenu! </h2>
+                <fh4>Ne propusti da nam ostavis komentar o Ananas platformi, dostavi, ponudi... jer tako pomazes da tvoje Ananas iskustvo ucinimo jos boljim.&#x1F60a; </fh4>
+            </div>
+            <form action="https://www.ananas.rs">
+                <div class="row">
+                </div>
+                <div class="row">
+                    <div class="row">
+                        <div class="col-25">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject"></label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Tvoj komentar..." style="height: 140px;width: 475px;"></textarea>
+                        </div>
+                    </div>
+            </form>
+            </div>
+        </form>
+
+
+        <h2 style="color: #2D2926;" id="fh2">Budi u toku, prijavi se na newsletter.</h2>
+        <fh4>Newsletter ti saljemo samo kad imamo nesto bas za tebe&#x1F60a;</fh4>
+        <div class="container" style="background-color:#FFFFFF">
+            <input type="text" placeholder="Email adresa*" name="mail" required>
+            <label>
+            <input type="checkbox" checked="checked" > <a href="https://ananas.rs/politika-privatnosti" style="color : #2D2926 ">Prijavom na Newsletter
+                    prihvataš Politiku privatnosti</a></p>
+        </label>
+            <h2 style="color:#000000;" id="fh2" text-align: center;>Odaberi omiljene kategorije proizvoda i kreiracemo ponudu po tvojoj meri.</h2>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Kategorije</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Unesi pojam..." id="myInput" onkeyup="filterFunction()">
+                    <ul class="items">
+                        <li><input type="checkbox" />Lux </li>
+                        <li><input type="checkbox" />Odeća</li>
+                        <li><input type="checkbox" />Obuća </li>
+                        <li><input type="checkbox" />Modni dodaci </li>
+                        <li><input type="checkbox" />Sport i rekreacija </li>
+                        <li><input type="checkbox" />IT Shop </li>
+                        <li><input type="checkbox" />Gaming</li>
+                        <li><input type="checkbox" />TV, Audio i Video</li>
+                        <li><input type="checkbox" />Telefoni i foto</li>
+                        <li><input type="checkbox" />Mali kućni aparati</li>
+                        <li><input type="checkbox" />Bela tehnika</li>
+                        <li><input type="checkbox" />Lepota i nega</li>
+                        <li><input type="checkbox" />Ishrana i zdravlje</li>
+                        <li><input type="checkbox" />Kuća i bašta</li>
+                        <li><input type="checkbox" />Uradi sam</li>
+                        <li><input type="checkbox" />Kancelarijski i školski pribor</li>
+                        <li><input type="checkbox" />Knjižara i zabava</li>
+                        <li><input type="checkbox" />Dečija oprema</li>
+                        <li><input type="checkbox" />Igračke</li>
+                        <li><input type="checkbox" />Pet shop</li>
+                        <li><input type="checkbox" />Auto i Moto</li>
+                        <li><input type="checkbox" />Sezona</li>
+                    </ul>
+                </div>
+            </div>
+            <address>
+    <fh4>Vladimira Popovica 8a</fh4><br>
+    © 2021 ānanas. Sva prava zadržana. Opšti uslovi kupovine.</fh4> <p><a href="https://ananas.rs/politika-privatnosti"
+            style="color:#FE5000">Politika privatnosti</a></p>
+  <a href="https://ananas.rs/politika-privatnosti" class="Politika privatnosti"></a>
+    <input type="submit" value="Potvrdi" onclick="clicked(event)" />
+       <script>
+        function clicked(e)
+        {
+            if(!confirm('Are you sure?')) {
+                e.preventDefault();
+            }
+        }
+       </script>
+           </address>
+        </div>
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        (function($) {
+            var CheckboxDropdown = function(el) {
+                var _this = this;
+                this.isOpen = false;
+                this.areAllChecked = false;
+                this.$el = $(el);
+                this.$label = this.$el.find('.dropdown-label');
+                this.$checkAll = this.$el.find('[data-toggle="check-all"]').first();
+                this.$inputs = this.$el.find('[type="checkbox"]');
+
+                this.onCheckBox();
+
+                this.$label.on('click', function(e) {
+                    e.preventDefault();
+                    _this.toggleOpen();
+                });
+
+                this.$checkAll.on('click', function(e) {
+                    e.preventDefault();
+                    _this.onCheckAll();
+                });
+
+                this.$inputs.on('change', function(e) {
+                    _this.onCheckBox();
+                });
+            };
+
+            CheckboxDropdown.prototype.onCheckBox = function() {
+                this.updateStatus();
+            };
+
+            CheckboxDropdown.prototype.updateStatus = function() {
+                var checked = this.$el.find(':checked');
+
+                this.areAllChecked = false;
+                this.$checkAll.html('Check All');
+
+                if (checked.length <= 0) {
+                    this.$label.html('Select Options');
+                } else if (checked.length === 1) {
+                    this.$label.html(checked.parent('label').text());
+                } else if (checked.length === this.$inputs.length) {
+                    this.$label.html('All Selected');
+                    this.areAllChecked = true;
+                    this.$checkAll.html('Uncheck All');
+                } else {
+                    this.$label.html(checked.length + ' Selected');
+                }
+            };
+
+            CheckboxDropdown.prototype.onCheckAll = function(checkAll) {
+                if (!this.areAllChecked || checkAll) {
+                    this.areAllChecked = true;
+                    this.$checkAll.html('Uncheck All');
+                    this.$inputs.prop('checked', true);
+                } else {
+                    this.areAllChecked = false;
+                    this.$checkAll.html('Check All');
+                    this.$inputs.prop('checked', false);
+                }
+
+                this.updateStatus();
+            };
+
+            CheckboxDropdown.prototype.toggleOpen = function(forceOpen) {
+                var _this = this;
+
+                if (!this.isOpen || forceOpen) {
+                    this.isOpen = true;
+                    this.$el.addClass('on');
+                    $(document).on('click', function(e) {
+                        if (!$(e.target).closest('[data-control]').length) {
+                            _this.toggleOpen();
+                        }
+                    });
+                } else {
+                    this.isOpen = false;
+                    this.$el.removeClass('on');
+                    $(document).off('click');
+                }
+            };
+
+            var checkboxesDropdowns = document.querySelectorAll('[data-control="checkbox-dropdown"]');
+            for (var i = 0, length = checkboxesDropdowns.length; i < length; i++) {
+                new CheckboxDropdown(checkboxesDropdowns[i]);
+            }
+
+        })(jQuery);
+    }
+</script>
+
+<script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-public-eur.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="0a178e70-7b54-4644-8026-466070444a35" data-lcw-version="prod" data-org-id="1295c4ca-0724-4c9d-8b48-86624bc4a210"
+    data-org-url="https://unq1295c4ca07244c9d8b4886624bc4a-crm4.omnichannelengagementhub.com" data-color-override="#FE5000"></script>
+
+</html>
