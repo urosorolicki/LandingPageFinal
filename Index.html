@@ -23,7 +23,12 @@
     <link rel="icon" type="image/png" sizes="96x96" href="Favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <?xml version="1.0" encoding="utf-8"?>
+<browserconfig><msapplication><tile><square70x70logo src="Favicon/ms-icon-70x70.png"/><square150x150logo src="/ms-icon-150x150.png"/><square310x310logo src="/ms-icon-310x310.png"/><TileColor>
+
+</tile></msapplication></browserconfig>
 
 </head>
 
@@ -32,234 +37,33 @@
     html {
         margin: 0px;
         padding: 40px;
-        /* background-image: url("Devojka\ sa\ kutijom.png"); */
         background-size: cover;
-        /* background-size: 200px 75px; */
         background-repeat: no-repeat;
-        font-family: '-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif';
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     
     .Container {
         width: 20%;
         min-width: 500px;
         float: right;
+        border-radius: 25px;
+        border: 0px solid #ffffff;
     }
     
-    header {
-        width: 100%;
-        height: 120px;
-        line-height: 120px;
-        background-color: #313131;
-    }
-    
-    header span {
-        color: #fff;
-        font-size: 30px;
-        padding-left: 20px;
-    }
-    
-    nav {
-        width: 100%;
-        height: 40px;
-        background-color: #ff6a00;
-    }
-    
-    .content {
-        width: 100%;
-        height: 700px;
-        padding: 10px 0px;
-        background-color: #fff;
-    }
-    
-    footer {
-        width: 100%;
-        height: 80px;
-        background-color: #808080;
-        margin-bottom: 20px;
-    }
-    
-    .main_articles {
-        width: 70%;
-        float: left;
-        height: 650px;
-        margin-left: 10px;
-    }
-    
-    .side_article {
-        width: 25%;
-        float: right;
-        height: 600px;
-        border-left: 1px dotted #6d6d6d;
-    }
-    
-    .siteDescription {
-        display: -moz-box;
-        /* Firefox*/
-        display: -webkit-box;
-        /* Chrome */
-        display: -ms-flexbox;
-        /* IE 10 */
-        display: flexbox;
-        flex-direction: row;
-        width: 95%;
-        height: 150px;
-    }
-    
-    .desImage {
-        -webkit-box-ordinal-group: 1;
-        /* iOS 6-, Safari, Opera*/
-        -moz-box-ordinal-group: 1;
-        /* Firefox*/
-        -ms-flex-order: 1;
-        /* IE 10 */
-        width: 200px;
-        height: 150px;
-    }
-    
-    .desImage img {
-        width: 200px;
-        height: 150px;
-        margin-left: 5px;
-        border: 2px solid #6d6d6d;
-    }
-    
-    .des {
-        margin-left: 15px;
-        -webkit-box-ordinal-group: 2;
-        /* iOS 6-, Safari, Opera*/
-        -moz-box-ordinal-group: 2;
-        /* Firefox*/
-        -ms-flex-order: 2;
-        /* IE 10 */
-        width: 70%;
-        height: 140px;
-        background-color: #e9e9e9;
-        padding: 5px;
-    }
-    
-    .ads {
-        width: 90%;
-        margin: auto;
-        margin-top: 10px;
-        height: 150px;
-        text-align: center;
-        padding-top: 10px;
-        background-color: #e5eff3;
-    }
-    
-    @media all and (max-width: 900px) {
-        .side_article {
-            /* Hide advertisement panel*/
-            display: none;
-            visibility: hidden;
-        }
-        .siteDescription {
-            width: 100%;
-            /* Earlier 70%*/
-        }
-        .main_articles {
-            width: 90%;
-            /* Earlier 95%*/
-        }
-    }
-    
-    @media all and (max-width: 700px) {
+    @media all and (max-width: 500px) {
         header {
-            height: 90px;
-            /* Earlier 120px*/
-            line-height: 90px
+            height: 70px;
+            line-height: 70px;
         }
         header span {
-            font-size: 20px;
-            /* Earlier 30px*/
-        }
-        .des {
-            width: 50%;
-            /* Earlier 70%*/
-            background-color: #e9e9e9;
-        }
-        @media all and (max-width: 500px) {
-            header {
-                height: 70px;
-                line-height: 70px;
-            }
-            header span {
-                font-size: 16px;
-            }
-            .side_article {
-                display: none;
-                visibility: hidden;
-            }
-            .main_articles {
-                width: 90%;
-            }
-            .siteDescription {
-                width: 95%;
-                height: auto;
-                display: block;
-            }
-            .desImage {
-                margin: auto;
-                width: 90%;
-                height: auto;
-            }
-            .desImage img {
-                width: 95%;
-                margin-left: 5px;
-            }
-            .des {
-                margin: auto;
-                margin-top: 10px;
-                width: 90%;
-                height: 300px;
-                background-color: #d9d9d9;
-            }
-        }
-        .WebContainer {
-            width: 100%;
-            height: auto;
-        }
-        .articles {
-            width: 90%;
-            /*Takes 90% width from WebContainer*/
-            height: auto;
-            margin: auto;
+            font-size: 16px;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Times New Roman", Times, serif;
             color: #84BD00;
             background-color: #ffffff;
-            /* background-image: url("Devojka\ sa\ kutijom.png"); */
             background-repeat: no-repeat;
             background-size: 20px;
-        }
-        form {
-            border: 20px solid #ffffff;
-        }
-        .container {
-            padding: 20px;
-            background-color: #FFFFFF;
-        }
-        input[type=text],
-        input[type=submit] {
-            width: 50%;
-            padding: 12px;
-            margin: 8px 22px;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 18px;
-        }
-        input[type=checkbox] {
-            margin-top: 32px;
-        }
-        input[type=submit] {
-            background-color: #84BD00;
-            color: white;
-            border: none;
-        }
-        input[type=submit]:hover {
-            opacity: 0.8;
         }
         #fh2 {
             padding: 10px 15px;
@@ -267,21 +71,10 @@
             text-align: center;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        #fh3 {
-            padding: 10px 15px;
-            color: #84BD00;
-            text-align: center;
-        }
         @media (max-width: 400px) {
             #fh2 {
                 font-size: 20px;
             }
-        }
-        #fh6 {
-            padding: px 15px;
-            color: #FE5000;
-            text-align: center;
-            font-weight: bold;
         }
         #fh4 {
             padding: 2px 15px;
@@ -289,704 +82,232 @@
             text-align: center;
             font-weight: bolder;
         }
-        #fh7 {
-            padding: 2px 15px;
-            color: #FE5000;
-            text-align: center;
-            font-weight: bold;
-        }
-        @media (max-width: 400px) {
-            #fh6 {
-                font-size: 12px;
-            }
-        }
-        .pinfo {
-            margin: 8px auto;
-            font-weight: bold;
-            line-height: 1.5;
-            color: #0d0d0d;
-        }
-        .form-group {
-            margin-bottom: 1rem;
-        }
-        /* HEADER HEADER HEADER */
-        .header {
-            overflow: hidden;
-            background-color: #ffffff;
-            padding: 20px 15px;
-        }
-        .header a {
-            float: left;
-            color: #2D2926;
-            text-align: center;
-            padding: 15px;
-            text-decoration: none;
-            font-size: 20px;
-            line-height: 25px;
-            border-radius: 20px;
-        }
-        .header a:hover {
-            background-color: #ddd;
-            color: #FE5000;
-        }
-        .header a.active {
-            background-color: #FE5000;
-            color: white;
-        }
-        .header-right {
-            float: right;
-        }
-        @media screen and (max-width: 500px) {
-            .header a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-            .header-right {
-                float: none;
-            }
-        }
-        /* FORMA FORMA FORMA */
-        /* SOCIAL ICONS SOCIAL ICONS SOCIAL ICONS */
-        .fa {
-            padding: 14px;
-            font-size: 20px;
-            width: 14px;
-            text-align: center;
-            text-decoration: none;
-            margin: 12px 2px;
-            border-radius: 80%;
-        }
-        .fa:hover {
-            opacity: 0.9;
-        }
-        .fa-facebook {
-            background: #3B5998;
-            color: rgb(255, 255, 255);
-        }
-        .fa-linkedin {
-            background: #007bb5;
-            color: white;
-        }
-        .fa-youtube {
-            background: #bb0000;
-            color: white;
-        }
-        .fa-instagram {
-            background: #8a3ab9;
-            color: #ffffff;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            text-align: center;
-        }
-        .form {
-            background-color: #ffffff;
-            max-width: 150px;
-            margin: 50px auto;
-            padding: 30px 20px;
-            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-        }
-        .form-control {
-            text-align: left;
-            margin-bottom: 25px;
-        }
-        Styling form-control Label .form-control label {
-            display: block;
-            margin-bottom: 10px;
-        }
-        .form-control input,
-        .form-control select,
-        .form-control textarea {
-            border: 45px solid #ffffff;
-            border-radius: 20px;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            padding: 34px;
-            display: block;
-            width: 97%;
-        }
-        .form-control input[type="radio"],
-        .form-control input[type="checkbox"] {
+        .dropdown-check-list {
             display: inline-block;
-            width: auto;
         }
-        button {
-            width: 50%;
-            padding: 7px;
-            margin: 8px 22px;
+        .dropdown-check-list .anchor {
+            position: relative;
+            cursor: pointer;
             display: inline-block;
+            padding: 5px 50px 5px 10px;
             border: 1px solid #ccc;
-            box-sizing: border-box;
-            border-radius: 45px;
-            color: rgb(255, 255, 255);
         }
-        @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
-        ul {
-            padding: 0;
-            margin: 0;
-        }
-        li {
-            list-style-type: none;
-        }
-        input[type=radio] {
-            display: none;
-        }
-        label {
-            cursor: pointer;
-        }
-         ::-webkit-scrollbar {
-            display: none;
-        }
-        body .swanky {
-            margin: auto;
-            top: 1700px;
-            bottom: 100px;
-            left: 0;
-            right: 700px;
-        }
-        body {
-            height: 100vh;
-            font-weight: 500;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
-            -webkit-font-smoothing: antialiased;
-            font-size: 17px;
-        }
-        body .swanky {
-            perspective: 600px;
-            width: 700px;
+        .dropdown-check-list .anchor:after {
             position: absolute;
-            margin: auto;
-            height: 360px;
-        }
-        body .swanky_title {
-            float: right;
-            text-align: left;
-            width: 400px;
-            color: white;
-            position: relative;
-            top: 70px;
-        }
-        body .swanky_title__social a {
-            position: relative;
-            overflow: hidden;
-            width: 140px;
-            margin-right: 15px;
-            text-decoration: none;
-            padding: 0px 0px 5px 0px;
-            height: 40px;
-            border: 2px solid white;
-            float: left;
-            color: white;
-            font-size: 12px;
-            font-weight: 400;
-            margin-top: 20px;
-        }
-        body .swanky_title__social a .slide {
-            height: 45px;
-            width: 100px;
-            float: left;
-            position: absolute;
-            transform: skew(20deg);
-            left: -120px;
-            transition-property: left;
-            transition-duration: 0.2s;
-            background: white;
-        }
-        body .swanky_title__social a .slide .arrow {
-            position: absolute;
-            right: 31px;
-            top: 24px;
-            opacity: 0;
-            transform: skew(-20deg);
-        }
-        body .swanky_title__social a .slide .arrow .stem {
-            width: 10px;
-            height: 2px;
-            background: #858490;
-        }
-        body .swanky_title__social a .slide .arrow .point {
-            width: 6px;
-            height: 6px;
-            border-right: 2px solid #858490;
-            top: -3px;
-            right: 1px;
-            position: absolute;
-            transform: rotate(45deg);
-            border-top: 2px solid #858490;
-        }
-        body .swanky_title__social a img {
-            width: 16px;
-            margin-left: 10px;
-            position: relative;
-            margin-right: 8px;
-            transition-property: margin-left;
-            transition-duration: 0.1s;
-            margin-top: 10px;
-            top: 4px;
-        }
-        body .swanky_title__social a:hover>.slide {
-            left: -70px;
-            transition-property: left;
-            transition-duration: 0.1s;
-        }
-        body .swanky_title__social a:hover>img {
-            margin-left: 40px;
-            transition-property: margin-left;
-            transition-duration: 0.1s;
-        }
-        body .swanky_title__social a:hover>.slide .arrow {
-            right: 11px;
-            opacity: 1;
-            transition-property: right, opacity;
-            transition-delay: 0.07s;
-            transition-duration: 0.2s;
-        }
-        body .swanky .intro {
-            float: right;
-            color: white;
-            width: 370px;
-            top: 50px;
-            position: relative;
-        }
-        body .swanky .intro h1 {
-            text-shadow: 0px 2px rgba(0, 0, 0, 0.26);
-        }
-        body .swanky .intro p {
-            line-height: 20px;
-            text-shadow: 0px 1px rgba(0, 0, 0, 0.26);
-        }
-        body .swanky_wrapper {
-            width: 225px;
-            height: auto;
-            overflow: hidden;
-            border-radius: 4px;
-            background: #fe5000;
-        }
-        body .swanky_wrapper label {
-            padding: 25px;
-            float: left;
-            height: 72px;
-            border-bottom: 1px solid #293649;
-            position: relative;
-            width: 100%;
-            color: #eff4fa;
-            transition: text-indent 0.15s, height 0.3s;
-            box-sizing: border-box;
-        }
-        body .swanky_wrapper label img {
-            margin-right: 10px;
-            position: relative;
-            top: 2px;
-            width: 16px;
-        }
-        body .swanky_wrapper label span {
-            position: relative;
-            top: -3px;
-        }
-        body .swanky_wrapper label:hover {
-            background: #AAB9C3;
-            border-bottom: 1px solid #AAB9C3;
-            text-indent: 4px;
-        }
-        body .swanky_wrapper label:hover .bar {
-            width: 100%;
-        }
-        body .swanky_wrapper label .bar {
-            width: 0px;
-            transition: width 0.15s;
-            height: 2px;
-            position: absolute;
-            display: block;
-            background: #FFFFFF;
-            bottom: 0;
-            left: 0;
-        }
-        body .swanky_wrapper label .lil_arrow {
-            width: 5px;
-            height: 5px;
-            transition: transform 0.8s;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            border-top: 2px solid white;
-            border-right: 2px solid white;
-            float: right;
-            position: relative;
-            top: 6px;
-            right: 2px;
-            transform: rotate(45deg);
-        }
-        body .swanky_wrapper__content {
-            position: absolute;
-            display: none;
-            overflow: hidden;
-            left: 0;
-            width: 100%;
-        }
-        body .swanky_wrapper__content li {
-            width: 100%;
-            opacity: 0;
-            left: -100%;
-            background: #84BD00;
-            padding: 25px 0px;
-            text-indent: 25px;
-            box-shadow: 0px 0px #126CA1 inset;
-            transition: box-shadow 0.3s, text-indent 0.3s;
-            position: relative;
-        }
-        body .swanky_wrapper__content li:hover {
-            background: #AAB9C3;
-            box-shadow: 3px 0px #AAB9C3;
-            transition: box-shadow 0.3s linear, text-indent 0.3s linear;
-            text-indent: 31px;
-        }
-        body .swanky_wrapper__content .clear {
-            clear: both;
-        }
-        input[type=radio]:checked+label .swanky_wrapper__content {
-            display: block;
-            top: 68px;
-            border-bottom: 1px solid #212e41;
-        }
-        input[type=radio]:checked+label>.lil_arrow {
-            transition: transform 0.8s;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            transform: rotate(135deg);
-            border-top: 2px solid #14a3f9;
-            border-right: 2px solid #14a3f9;
-        }
-        input[type=radio]:checked+label {
-            height: 325px;
-            background: #FE5000;
-            text-indent: 4px;
-            transition-property: height;
-            transition-duration: 0.6s;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        input[type=radio]:checked+label .bar {
-            width: 0;
-        }
-        input[type=radio]:checked+label li:nth-of-type(1) {
-            -webkit-animation: in 0.15s 0.575s forwards;
-            animation: in 0.15s 0.575s forwards;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            -moz-animation: in 0.15s 0.575s forwards;
-            -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        input[type=radio]:checked+label li:nth-of-type(2) {
-            -webkit-animation: in 0.15s 0.7s forwards;
-            animation: in 0.15s 0.7s forwards;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            -moz-animation: in 0.15s 0.7s forwards;
-            -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        input[type=radio]:checked+label li:nth-of-type(3) {
-            -webkit-animation: in 0.15s 0.825s forwards;
-            animation: in 0.15s 0.825s forwards;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            -moz-animation: in 0.15s 0.825s forwards;
-            -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        input[type=radio]:checked+label li:nth-of-type(4) {
-            -webkit-animation: in 0.15s 0.95s forwards;
-            animation: in 0.15s 0.95s forwards;
-            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            -moz-animation: in 0.15s 0.95s forwards;
-            -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-        @-webkit-keyframes in {
-            from {
-                left: -100%;
-                opacity: 0;
-            }
-            to {
-                left: 0;
-                opacity: 1;
-            }
-        }
-        @keyframes in {
-            from {
-                left: -100%;
-                opacity: 0;
-            }
-            to {
-                left: 0;
-                opacity: 1;
-            }
-        }
-        .love {
-            position: absolute;
-            right: 20px;
-            bottom: 0px;
-            font-size: 11px;
-            font-weight: normal;
-        }
-        .love p {
-            color: white;
-            font-weight: normal;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .love a {
-            color: white;
-            font-weight: 700;
-            text-decoration: none;
-        }
-        .love img {
-            position: relative;
-            top: 3px;
-            margin: 0px 4px;
-            width: 10px;
-        }
-        .brand {
-            position: absolute;
-            left: 20px;
-            bottom: 14px;
-        }
-        .brand img {
-            width: 30px;
-        }
-        label {
-            padding: 12px 12px 12px 0;
-            display: inline-block;
-        }
-        input[type=submit] {
-            background-color: #04AA6D;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-        .container {
-            border-radius: 5px;
-            background-color: #f2f2f2;
-            box-sizing: border-box;
-        }
-        input[typetext],
-        select,
-        textarea {
-            width: 90%;
-            padding: 35px;
-            border: 22px solid #FE5000;
-            border-radius: 55px;
-            resize: vertical;
-        }
-        label {
-            padding: 12px 12px 12px 0;
-            display: inline-block;
-        }
-        input[type=submit] {
-            background-color: #84BD00;
-            color: white;
-            padding: 12px 20px;
-            border: #FE5000;
-            border-radius: 35px;
-            cursor: pointer;
-            float: center;
-        }
-        input[type=submit]:hover {
-            background-color: #84BD00;
-        }
-        .container {
-            border-radius: 45px;
-            color: #000000;
-            background-color: #ffffff;
-            padding: 20px;
-        }
-        .col-25 {
-            float: left;
-            width: 25%;
-            margin-top: 6px;
-        }
-        .col-75 {
-            float: left;
-            width: 100%;
-            margin-top: 6px;
-        }
-        .row:after {
             content: "";
-            display: table;
-            clear: both;
+            border-left: 2px solid black;
+            border-top: 2px solid black;
+            padding: 5px;
+            right: 10px;
+            top: 20%;
+            -moz-transform: rotate(-135deg);
+            -ms-transform: rotate(-135deg);
+            -o-transform: rotate(-135deg);
+            -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
         }
-        @media screen and (max-width: 600px) {
-            .col-25,
-            .col-75,
-            input[type=submit] {
-                width: 100%;
-                margin-top: 0;
-            }
+        .dropdown-check-list .anchor:active:after {
+            right: 8px;
+            top: 21%;
         }
-        .dropbtn {
-            background-color: #84BD00;
-            color: white;
-            padding: 20px;
-            width: 200px;
-            font-size: 20px;
-            border: none;
-            cursor: pointer;
-        }
-        .dropbtn:hover,
-        .dropbtn:focus {
-            background-color: #3e8e41;
-        }
-        #myInput {
-            box-sizing: border-box;
-            background-image: url('searchicon.png');
-            background-position: 14px 12px;
-            background-repeat: no-repeat;
-            font-size: 16px;
-            padding: 14px 20px 12px 6px;
-            border: none;
-            border-bottom: 3px solid #ddd;
-        }
-        #myInput:focus {
-            outline: 3px solid #ddd;
-        }
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-        .dropdown-content {
+        .dropdown-check-list ul.items {
+            padding: 2px;
             display: none;
-            position: absolute;
-            background-color: #f6f6f6;
-            min-width: 230px;
-            overflow: auto;
-            border: 1px solid #ddd;
-            z-index: 1;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-top: none;
         }
-        .dropdown-content a {
-            color: rgb(255, 255, 255);
-            padding: 0px 16px;
-            text-decoration: none;
-            display: block;
+        .dropdown-check-list ul.items li {
+            list-style: none;
         }
-        .dropdown a:hover {
-            background-color: #ddd;
+        .dropdown-check-list.visible .anchor {
+            color: #0094ff;
         }
-        .show {
+        .dropdown-check-list.visible .items {
             display: block;
         }
     }
 </style>
 
 <body>
-    <div style="position:fixed; right:80px; top:20px; background-color:white;">
-
-    </div>
-    </div><img src="" alt="" width="" height="" alight="center">
-    <div class='brand'>
-    </div>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <form action="/action_page.php">
-        <div class="container">
-            <h2 style="color: #2D2926;" id="fh2">Hvala ti na izdvojenom vremenu i pažnji. Tvoje mišljenje nam puno znači. Prijavi se na newsletter i budi u toku sa najnovijim promocijama, popustima i pogodnostima.</h2>
-        </div>
-        <div class="container" style="background-color:#FFFFFF">
-            <input type="text" placeholder="Email adresa" name="mail" required>
-            <label>
-                <input type="checkbox" checked="checked" name="Potvrdi">
-                <p><a href="https://ananas.rs/politika-privatnosti" style="color : #2D2926 ">Prijavom na Newsletter
-                        prihvataš Politiku privatnosti</a></p>
-            </label>
-        </div>
-        <div class="container">
-            <input type="submit" value="Potvrdi">
-        </div>
-    </form>
-
-    <div class="container">
-        <h2 style="color: #2D2926;" id="fh2">Kakvo je tvoje iskustvo sa Ananasom? Želeli bismo da znamo kakva su tvoja iskustva sa sajtom, cenama, korisničkom podrškom, plaćanjem i dostavom.</h2>
-        <form action="https://www.ananas.rs">
-            <div class="row">
+    <div class="Container">
+        <form action="/action_page.php">
+            <div class="container">
+                <h2 style="color: #2D2926;" id="fh2">Hvala ti na obavljenoj kupovini i izdvojenom vremenu! </h2>
+                <fh4>Ne propusti da nam ostavis komentar o Ananas platformi, dostavi, ponudi... jer tako pomazes da tvoje Ananas iskustvo ucinimo jos boljim.&#x1F60a; </fh4>
             </div>
-            <div class="row">
+            <form action="https://www.ananas.rs">
                 <div class="row">
-                    <div class="col-25">
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-25">
-                        <label for="subject"></label>
+                    <div class="row">
+                        <div class="col-25">
+                        </div>
                     </div>
-                    <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Tvoj komentar..." style="height: 137px;width: 10cm;"></textarea>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="subject"></label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="subject" name="subject" placeholder="Tvoj komentar..." style="height: 140px;width: 475px;"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <input type="submit" value="Potvrdi">
-                </div>
+            </form>
+            </div>
         </form>
+
+
+        <h2 style="color: #2D2926;" id="fh2">Budi u toku, prijavi se na newsletter.</h2>
+        <fh4>Newsletter ti saljemo samo kad imamo nesto bas za tebe&#x1F60a;</fh4>
+        <div class="container" style="background-color:#FFFFFF">
+            <input type="text" placeholder="Email adresa*" name="mail" required>
+            <label>
+            <input type="checkbox" checked="checked" > <a href="https://ananas.rs/politika-privatnosti" style="color : #2D2926 ">Prijavom na Newsletter
+                    prihvataš Politiku privatnosti</a></p>
+        </label>
+            <h2 style="color:#000000;" id="fh2" text-align: center;>Odaberi omiljene kategorije proizvoda i kreiracemo ponudu po tvojoj meri.</h2>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Kategorije</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <input type="text" placeholder="Unesi pojam..." id="myInput" onkeyup="filterFunction()">
+                    <ul class="items">
+                        <li><input type="checkbox" />Lux </li>
+                        <li><input type="checkbox" />Odeća</li>
+                        <li><input type="checkbox" />Obuća </li>
+                        <li><input type="checkbox" />Modni dodaci </li>
+                        <li><input type="checkbox" />Sport i rekreacija </li>
+                        <li><input type="checkbox" />IT Shop </li>
+                        <li><input type="checkbox" />Gaming</li>
+                        <li><input type="checkbox" />TV, Audio i Video</li>
+                        <li><input type="checkbox" />Telefoni i foto</li>
+                        <li><input type="checkbox" />Mali kućni aparati</li>
+                        <li><input type="checkbox" />Bela tehnika</li>
+                        <li><input type="checkbox" />Lepota i nega</li>
+                        <li><input type="checkbox" />Ishrana i zdravlje</li>
+                        <li><input type="checkbox" />Kuća i bašta</li>
+                        <li><input type="checkbox" />Uradi sam</li>
+                        <li><input type="checkbox" />Kancelarijski i školski pribor</li>
+                        <li><input type="checkbox" />Knjižara i zabava</li>
+                        <li><input type="checkbox" />Dečija oprema</li>
+                        <li><input type="checkbox" />Igračke</li>
+                        <li><input type="checkbox" />Pet shop</li>
+                        <li><input type="checkbox" />Auto i Moto</li>
+                        <li><input type="checkbox" />Sezona</li>
+                    </ul>
+                </div>
+            </div>
+            <address>
+    <fh4>Vladimira Popovica 8a</fh4><br>
+    © 2021 ānanas. Sva prava zadržana. Opšti uslovi kupovine.</fh4> <p><a href="https://ananas.rs/politika-privatnosti"
+            style="color:#FE5000">Politika privatnosti</a></p>
+  <a href="https://ananas.rs/politika-privatnosti" class="Politika privatnosti"></a>
+    <input type="submit" value="Potvrdi" onclick="clicked(event)" />
+       <script>
+        function clicked(e)
+        {
+            if(!confirm('Are you sure?')) {
+                e.preventDefault();
+            }
+        }
+       </script>
+           </address>
         </div>
 </body>
-<h2 style="color:#2D2926;" id="fh2" text-align: center;>Kako bi ponudu prilagodili tvom ukusu, željama i potrebama, želimo da te bolje upoznamo. Odaberi svoje omiljene kategorije proizvoda.</h2>
-<div class="dropdown">
-    <button onclick="myFunction()" class="dropbtn">Kategorije</button>
-    <div id="myDropdown" class="dropdown-content">
-        <input type="text" placeholder="Unesi pojam..." id="myInput" onkeyup="filterFunction()">
-        <ul class="items">
-            <li><input type="checkbox" />Lux </li>
-            <li><input type="checkbox" />Odeća</li>
-            <li><input type="checkbox" />Obuća </li>
-            <li><input type="checkbox" />Modni dodaci </li>
-            <li><input type="checkbox" />Sport i rekreacija </li>
-            <li><input type="checkbox" />IT Shop </li>
-            <li><input type="checkbox" />Gaming</li>
-            <li><input type="checkbox" />TV, Audio i Video</li>
-            <li><input type="checkbox" />Telefoni i foto</li>
-            <li><input type="checkbox" />Mali kućni aparati</li>
-            <li><input type="checkbox" />Bela tehnika</li>
-            <li><input type="checkbox" />Lepota i nega</li>
-            <li><input type="checkbox" />Ishrana i zdravlje</li>
-            <li><input type="checkbox" />Kuća i bašta</li>
-            <li><input type="checkbox" />Uradi sam</li>
-            <li><input type="checkbox" />Kancelarijski i školski pribor</li>
-            <li><input type="checkbox" />Knjižara i zabava</li>
-            <li><input type="checkbox" />Dečija oprema</li>
-            <li><input type="checkbox" />Igračke</li>
-            <li><input type="checkbox" />Pet shop</li>
-            <li><input type="checkbox" />Auto i Moto</li>
-            <li><input type="checkbox" />Sezona</li>
-            <button><a href='https://ananas.rs' alt='Kategorije'>Potvrdi</a></button>
-        </ul>
-    </div>
-</div>
 <script>
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
-    }
+        (function($) {
+            var CheckboxDropdown = function(el) {
+                var _this = this;
+                this.isOpen = false;
+                this.areAllChecked = false;
+                this.$el = $(el);
+                this.$label = this.$el.find('.dropdown-label');
+                this.$checkAll = this.$el.find('[data-toggle="check-all"]').first();
+                this.$inputs = this.$el.find('[type="checkbox"]');
 
-    function filterFunction() {
-        var input, filter, ul, li, a, i;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        div = document.getElementById("myDropdown");
-        a = div.getElementsByTagName("a");
-        for (i = 0; i < a.length; i++) {
-            txtValue = a[i].textContent || a[i].innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                a[i].style.display = "";
-            } else {
-                a[i].style.display = "none";
+                this.onCheckBox();
+
+                this.$label.on('click', function(e) {
+                    e.preventDefault();
+                    _this.toggleOpen();
+                });
+
+                this.$checkAll.on('click', function(e) {
+                    e.preventDefault();
+                    _this.onCheckAll();
+                });
+
+                this.$inputs.on('change', function(e) {
+                    _this.onCheckBox();
+                });
+            };
+
+            CheckboxDropdown.prototype.onCheckBox = function() {
+                this.updateStatus();
+            };
+
+            CheckboxDropdown.prototype.updateStatus = function() {
+                var checked = this.$el.find(':checked');
+
+                this.areAllChecked = false;
+                this.$checkAll.html('Check All');
+
+                if (checked.length <= 0) {
+                    this.$label.html('Select Options');
+                } else if (checked.length === 1) {
+                    this.$label.html(checked.parent('label').text());
+                } else if (checked.length === this.$inputs.length) {
+                    this.$label.html('All Selected');
+                    this.areAllChecked = true;
+                    this.$checkAll.html('Uncheck All');
+                } else {
+                    this.$label.html(checked.length + ' Selected');
+                }
+            };
+
+            CheckboxDropdown.prototype.onCheckAll = function(checkAll) {
+                if (!this.areAllChecked || checkAll) {
+                    this.areAllChecked = true;
+                    this.$checkAll.html('Uncheck All');
+                    this.$inputs.prop('checked', true);
+                } else {
+                    this.areAllChecked = false;
+                    this.$checkAll.html('Check All');
+                    this.$inputs.prop('checked', false);
+                }
+
+                this.updateStatus();
+            };
+
+            CheckboxDropdown.prototype.toggleOpen = function(forceOpen) {
+                var _this = this;
+
+                if (!this.isOpen || forceOpen) {
+                    this.isOpen = true;
+                    this.$el.addClass('on');
+                    $(document).on('click', function(e) {
+                        if (!$(e.target).closest('[data-control]').length) {
+                            _this.toggleOpen();
+                        }
+                    });
+                } else {
+                    this.isOpen = false;
+                    this.$el.removeClass('on');
+                    $(document).off('click');
+                }
+            };
+
+            var checkboxesDropdowns = document.querySelectorAll('[data-control="checkbox-dropdown"]');
+            for (var i = 0, length = checkboxesDropdowns.length; i < length; i++) {
+                new CheckboxDropdown(checkboxesDropdowns[i]);
             }
-        }
+
+        })(jQuery);
     }
 </script>
-<address>
-    Vladimira Popovica 8a<br>
-    © 2021 ānanas. Sva prava zadržana. Opšti uslovi kupovine. <p><a href="https://ananas.rs/politika-privatnosti"
-            style="color:#FE5000">Politika privatnosti</a></p>
-    <a href="https://ananas.rs/politika-privatnosti" class="Politika privatnosti"></a>
-</address>
+
 <script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-public-eur.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="0a178e70-7b54-4644-8026-466070444a35" data-lcw-version="prod" data-org-id="1295c4ca-0724-4c9d-8b48-86624bc4a210"
     data-org-url="https://unq1295c4ca07244c9d8b4886624bc4a-crm4.omnichannelengagementhub.com" data-color-override="#FE5000"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<a href="https://www.facebook.com/ananasEcommerce" class="fa fa-facebook"></a>
-<a href="https://www.linkedin.com/company/ananas-e-commerce/mycompany/" class="fa fa-linkedin"></a>
-<a href="https://www.youtube.com/channel/UCOGxzjqza0GkP0nG7_Fj2ug" class="fa fa-youtube"></a>
-<a href="https://www.instagram.com/ananas.ecommerce/" class="fa fa-instagram"></a>
 
 </html>
